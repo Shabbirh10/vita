@@ -61,8 +61,5 @@ A sophisticated full-stack application that leverages **NLP** to transform messy
    npm run dev
    ```
 
-## 📝 License
-Distributed under the MIT License.
 
----
-Built with 🚀 for a smarter hiring experience.
+
