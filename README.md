@@ -10,8 +10,9 @@ A sophisticated full-stack application that leverages **NLP** to transform messy
 *   **Real-time Processing**: Immediate feedback loop from file upload to data visualization.
 
 ## 📸 Dashboard Preview
+<img width="1466" height="734" alt="Screenshot 2026-02-12 at 10 35 48 AM" src="https://github.com/user-attachments/assets/5246cbf9-3542-40fd-a30d-ec76c977d4e4" />
+<img width="1466" height="734" alt="Screenshot 2026-02-12 at 10 35 25 AM" src="https://github.com/user-attachments/assets/be86eb29-383a-4fb3-9c1c-40fe8859b361" />
 
-![Project Dashboard](screenshots/dashboard.png)
 
 ## 🏗️ Technical Architecture
 
