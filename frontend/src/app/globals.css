@@ -1,26 +1,75 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-cormorant-garamond), serif;
+  --font-body: var(--font-inter), sans-serif;
+
+  --color-deep: #0B0B0C;
+  --color-surface: #121214;
+  --color-elevated: #1C1C1F;
+  --color-amber: #C5A880;          /* Champagne Gold */
+  --color-teal: #7AA28C;           /* Muted Sage */
+  --color-rose: #C27E80;           /* Muted Crimson */
+  --color-text: #EBEBEF;           /* Platinum White */
+  --color-muted: #8E8E93;          /* Soft Gray */
+  --color-border: #222225;         /* Hairline Border */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(197, 168, 128, 0.2) transparent;
+}
+
+::selection {
+  background: rgba(197, 168, 128, 0.15);
+  color: #EBEBEF;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 110%; /* Comfortable base scale */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0B0B0C;
+  background-image:
+    radial-gradient(circle at 50% -20%, rgba(197, 168, 128, 0.07), transparent 70%),
+    radial-gradient(circle at 10% 80%, rgba(122, 162, 140, 0.02), transparent 50%);
+  background-size: 100% 100%;
+  color: #EBEBEF;
+  font-family: var(--font-inter), sans-serif;
+  min-height: 100vh;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card-glass {
+  background: #121214;
+  border: 1px solid rgba(197, 168, 128, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-glass:hover {
+  border-color: rgba(197, 168, 128, 0.28);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.card-glass-accent {
+  background: #121214;
+  border: 1px solid rgba(197, 168, 128, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.45);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-glass-accent:hover {
+  border-color: #C5A880;
+  box-shadow: 0 8px 36px rgba(197, 168, 128, 0.05);
+}
+
+.text-balance {
+  text-wrap: balance;
 }

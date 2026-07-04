@@ -1,34 +1,46 @@
-# 📄 NLP Resume Parser & Career Insights
+# 📄 vita — Intelligent Résumé Parser & Market Insights
 
-A sophisticated full-stack application that leverages **NLP** to transform messy PDF resumes into structured, actionable data. It doesn't just parse; it visualizes your professional identity in seconds.
+A sleek, premium full-stack application that transforms raw PDF résumés into structured, actionable talent fingerprints. It doesn't just parse; it visualizes candidate capabilities and maps their fit against custom job descriptions and global market indices.
 
 ## ✨ Core Features
 
-*   **AI-Powered Extraction**: Uses Spacy's Named Entity Recognition (NER) to pull out Names, Contact Info, and Skills with high precision.
-*   **Visual Skill DNA**: Generates a dynamic Radar Chart using **Recharts** to visualize your technical breadth and depth.
-*   **Modern Premium UI**: A sleek, dark-mode dashboard built with **Next.js 15** and **Tailwind CSS**, featuring smooth micro-animations by **Framer Motion**.
-*   **Real-time Processing**: Immediate feedback loop from file upload to data visualization.
+*   **Global Market Insights**: Interactive dashboard showcasing tech market growth rates, hiring velocity, top engineering trends, and salary indices.
+*   **Job Description Matcher (ATS)**: Calculates compatibility match percentages and skill-gap analyses directly against pasted role requirements.
+*   **Structured Capability DNA**: Generates a dynamic capability radar map using **Recharts** to visualize technical breadth and depth.
+*   **Premium Minimalist Interface**: Styled with a dark "Champagne & Caviar" aesthetic that prioritizes visual comfort and precise spacing.
 
-## 📸 Dashboard Preview
-<img width="1466" height="734" alt="Screenshot 2026-02-12 at 10 35 48 AM" src="https://github.com/user-attachments/assets/5246cbf9-3542-40fd-a30d-ec76c977d4e4" />
-<img width="1466" height="734" alt="Screenshot 2026-02-12 at 10 35 25 AM" src="https://github.com/user-attachments/assets/be86eb29-383a-4fb3-9c1c-40fe8859b361" />
+---
 
+## 📸 Dashboard Previews
+
+### 1. Global Software Hiring Insights (Homepage)
+![Global Software Hiring Insights](screenshots/insights.png)
+
+### 2. target Role Matcher & Résumé Upload
+![Target Role Matcher & Uploader](screenshots/parser.png)
+
+### 3. Candidate Fingerprint & ATS Compatibility Analysis
+![Candidate Fingerprint & ATS Results](screenshots/results.png)
+
+---
 
 ## 🏗️ Technical Architecture
 
 ### Frontend
-- **Framework**: Next.js 15 (App Router)
+- **Framework**: Next.js 16 (App Router)
 - **Styling**: Tailwind CSS (v4)
 - **Animations**: Framer Motion
-- **Visualization**: Recharts (Radar/Spider Charts)
-- **State Management**: React Hooks
+- **Visualization**: Recharts (Radar & Line charts)
 
 ### Backend
 - **Framework**: Django 5.0
 - **API**: Django REST Framework (DRF)
-- **NLP Engine**: Spacy (`en_core_web_sm`)
-- **PDF Processing**: PDFPlumber
-- **Database**: SQLite3 (Development)
+- **NLP Engine**: spaCy (`en_core_web_sm`)
+- **PDF Extraction**: PDFPlumber
+- **Compatibility Analyzer**: Gemini 2.0 Flash Integration
+- **Database**: SQLite3
+
+---
 
 ## 🚀 Getting Started
 
@@ -40,7 +52,7 @@ A sophisticated full-stack application that leverages **NLP** to transform messy
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/[your-username]/NLPResumeParser.git
+   git clone https://github.com/shabbirhardwarewala/NLPResumeParser.git
    cd NLPResumeParser
    ```
 
@@ -57,10 +69,7 @@ A sophisticated full-stack application that leverages **NLP** to transform messy
 
 3. **Frontend Setup**
    ```bash
-   cd frontend
+   cd ../frontend
    npm install
    npm run dev
    ```
-
-
-
