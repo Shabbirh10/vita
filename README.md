@@ -11,16 +11,9 @@ A sleek, premium full-stack application that transforms raw PDF résumés into s
 
 ---
 
-## 📸 Dashboard Previews
+## 📸 Dashboard Preview
 
-### 1. Global Software Hiring Insights (Homepage)
-![Global Software Hiring Insights](screenshots/insights.png)
-
-### 2. target Role Matcher & Résumé Upload
-![Target Role Matcher & Uploader](screenshots/parser.png)
-
-### 3. Candidate Fingerprint & ATS Compatibility Analysis
-![Candidate Fingerprint & ATS Results](screenshots/results.png)
+![vita Dashboard Preview](screenshots/dashboard.png)
 
 ---
 
